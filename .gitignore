@@ -1,0 +1,11 @@
+**__pycache__**
+**.ipynb**
+logs
+**.terraform**
+plugins
+config
+main3.py
+analyses
+macros
+seeds
+snapshots

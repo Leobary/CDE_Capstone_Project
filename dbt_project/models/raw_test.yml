@@ -1,0 +1,19 @@
+# A script to carry out test on different tables with the model
+models:
+  - name: travel_agency
+    description: "Test on travel agency table to check that country_name is not empty and has unique
+                  and not_null values"
+    columns:
+      - name: country_name
+        data_tests:
+          - string_not_empty
+          - unique
+          - not_null
+
+  - name: dim_un_member
+    description: "Test on dining table to check unique, not_null and accepted values"
+    columns:
+      - name: un_member_status
+        data_tests:
+          - accepted_values:
+              values: ['member', 'non-member']
