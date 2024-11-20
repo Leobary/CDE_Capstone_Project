@@ -23,7 +23,7 @@ with DAG(
     schedule_interval='0 0 * * *',
     catchup=False,
     default_view="graph",
-    tags=["capstone project"]
+    tags=["capstone project", "cde"]
 ) as dag:
 
     extract_raw_to_s3 = PythonOperator(
