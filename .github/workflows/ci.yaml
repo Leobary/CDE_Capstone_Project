@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements-dev.txt
 
       - name: Running isort.
-        run: isort --check-only  .
+        run: isort --check-only .
 
       - name: Running flake8
         run: flake8 .
